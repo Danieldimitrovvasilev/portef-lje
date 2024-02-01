@@ -44,24 +44,22 @@ img{
 .container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 100px auto 100px;
+    grid-template-rows: 100px auto auto;
     height: 100vh;
 }
 
 header{
-    background-color: blue;
     grid-column-start: 1;
     grid-column-end: 4;
 }
 
 main{
-    background-color: aqua;
     grid-column-start: 1;
     grid-column-end: 4;
 }
 
 footer{
-    background-color: red;
+    background-color: #171B26;
     grid-column-start: 1;
     grid-column-end: 4;
 }
@@ -166,8 +164,6 @@ footer{
 }
 
 .image img{
-    position: relative;
-    bottom: 2rem;
     width:70vh;
     display: flex;
     margin-left: 33%;
@@ -179,6 +175,7 @@ footer{
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+    margin: 2rem 0 0 0;
 }
 
 #pic1{
@@ -197,20 +194,21 @@ footer{
 }
 
 .box ul{
-    margin-top: 15rem;
+    margin: 6rem 0 0 0;
     text-align: center;
 }
 
 .box ul li{
     display: inline-block;
     margin: 2px;
-    bottom: 30vh;
+    margin-bottom: 3rem;
     border: 50px solid #BF1F2C;
     background-color: #BF1F2C;
     border-radius: 15px;
 }
 
 .box ul li p{
+    margin-top: 2rem;
     position: relative;
     font-size: 150x;
     font-family: 'Poppins', sans-serif;
@@ -228,3 +226,292 @@ footer{
 .Blyant img{
     transform: rotate(-150deg);
 }
+
+/*projects seksjonen*/
+
+#projects{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+#projects h2{
+    margin: 0 0 2rem 0;
+    color: #FFFBFB;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+#projects p{
+    padding-top: 3rem;
+    color: #FFFBFB;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+.Bilde-gallery{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto auto auto auto auto auto;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.første-element{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.andre-element{
+    background-color: EDE9DD;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.tredje-element{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.fjerde-element{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+.skjete-element{
+    background-color: white;
+    border-radius: 5px;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+.skjete-element img{
+    width: 200px;
+    padding-left: 5rem;
+}
+
+#contact h2{
+    color: #BF1F2C;
+    padding-top: 5rem;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.contact-text p{
+    text-align: center;
+    margin-top: 2rem;
+    color: #FFFBFB;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+#pic4{
+    height: 45%;
+    width: 16%;
+}
+
+#pic5{
+    height: 45%;
+    width: 9%;
+}
+
+.contact-box ul{
+    margin: 6rem 0 0 0;
+    text-align: center;
+}
+
+.contact-box ul li{
+    display: inline-block;
+    margin: 2px;
+    margin-bottom: 3rem;
+    border: 50px solid #BF1F2C;
+    background-color: #BF1F2C;
+    border-radius: 15px;
+}
+
+.contact-box ul li p{
+    margin-top: 2rem;
+    position: relative;
+    font-size: 150x;
+    font-family: 'Poppins', sans-serif;
+    font-weight:lighter;
+    color:#FFFBFB;
+}
+
+.contact-box .list1 li{
+    width:19rem;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+
+.github a{
+    color:#FFFBFB ;
+    text-decoration: none;
+}
+ 
+.github a::after{
+    content: "";
+    height: 1px;
+    width:0;
+    background:#FFFBFB;
+    position: absolute;
+    right: -3px;
+    bottom: -3px;
+    transition: 0.8s;
+}
+
+.github a:hover::after{
+    width: 20%;
+}
+
+@media (max-width: 945px) {
+    
+    .logo img{
+        width: 10rem;
+        margin-top: px;
+        position: relative;
+    }
+    
+    
+    .tekst-1{
+        padding: 15rem 0 0 1rem ;
+    }
+    .tekst-1 h1{
+        margin-right: 100px;
+        font-size: 10px;
+        font-weight: lighter;
+        font-family: 'Poppins', sans-serif;
+        color: #FFFBFB;
+        position: relative;
+    }
+    
+    .Text-box{
+        padding: 5rem 0 0 0rem;
+    }
+    
+    .Text-box p{
+        padding-right: 100px;
+        font-size: 20px;
+        position: relative;
+    }
+    
+    .Text-box a{
+        text-decoration: none;
+        border:.5px solid #FFFBFB;
+        padding: 20px;
+        color:#FFFBFB ;
+        background: transparent;
+        transition: 0.5s;
+        border-radius: 6px;
+    }
+    
+    .Text-box a:hover{
+        color: #BF1F2C;
+        background:#FFFBFB;
+    }
+
+    .meny ul{
+        display: inline-block;
+        margin-top: 3rem;
+    }
+    
+    .meny ul li{
+        
+        position: relative;
+        list-style: none;
+    }
+
+    .meny ul li a{
+        font-size: 15px;
+    }
+
+    .image img{
+        width:30vh;
+        display: flex;
+        margin-left: 16%;
+    }
+
+    .about-text p{
+        padding-right: 50px;
+        font-size: 16px;
+        font-weight: lighter;
+        font-family: 'Poppins', sans-serif;
+        color: #BF1F2C;
+        position: relative;
+    }
+    .box .list1 li{
+        width:15rem;
+        margin-right: 30px;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+
+    #projects p{
+        padding-right: 45px;
+        font-size: 17px;
+        font-weight: lighter;
+        font-family: 'Poppins', sans-serif;
+        color: #FFFBFB;
+        position: relative;
+    }
+    
+
+    .Bilde-gallery {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact-box .list1 li{
+        width:10rem;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+  

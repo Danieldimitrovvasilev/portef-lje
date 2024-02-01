@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*ingen element skal ikke ha noe padding eller magrin*/
+*{
+   padding: 0;
+   margin: 0;
+}
+
+/*referer til html*/
+html{
+    scroll-behavior: smooth;
+}
+
+/*gjelder det som er i body*/
+body{
+    background-color: #FFFBFB;
+}
+
+/*for at alle elementer skal være 100% i containeren sin*/
+img{
+    width: 100%;
+}
+
+/*Navigasjons meny*/
+
+#bakgrunn{
+/*legge bakgrunn over, størrelse, posisjon og høyde*/
+  background-image:url(Bilder/Firefly\ background\ for\ portofilio\ for\ programming\ 4459.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.gardient{
+    /*Bruker en ny klasse til for å lagge gradient som skal legges over bilde*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(23, 27, 38,.7);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px auto 100px;
+    height: 100vh;
+}
+
+header{
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+main{
+    background-color: aqua;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+footer{
+    background-color: red;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.logo img{
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 2rem;
+    position: relative;
+}
+
+.flex{
+    /*Bruker flex til å gjøre space mellom ellementer*/
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.meny ul{
+    display: flex;
+}
+
+.meny ul li{
+    margin: 2rem;
+    margin-top: 2rem;
+    position: relative;
+    list-style: none;
+}
+
+.meny ul li a{
+    text-decoration: none;
+    font-size: 2vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight:lighter;
+    color:#FFFBFB;
+}
+
+.meny ul li ::after{
+    content: "";
+    height: 1px;
+    width:0;
+    background:#BF1F2C;
+    position: absolute;
+    left:0;
+    bottom: -3px;
+    transition: 0.8s;
+}
+
+.meny ul li :hover::after{
+    width: 100%;
+}
+
+.tekst-1{
+    padding: 10rem 0 0 1rem ;
+}
+.tekst-1 h1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFBFB;
+    position: relative;
+}
+
+.Text-box{
+    padding: 3rem 0 0 0rem;
+}
+
+.Text-box p{
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+}
+
+.Text-box a{
+    text-decoration: none;
+    border:.5px solid #FFFBFB;
+    padding: 20px;
+    color:#FFFBFB ;
+    background: transparent;
+    transition: 0.5s;
+    border-radius: 6px;
+}
+
+.Text-box a:hover{
+    color: #BF1F2C;
+    background:#FFFBFB;
+}
+/*Navigasjons meny slutt*/
+
+#about{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+#about h1{
+    padding-bottom: 1rem;
+    color: #BF1F2C;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.image img{
+    position: relative;
+    bottom: 2rem;
+    width:70vh;
+    display: flex;
+    margin-left: 33%;
+}
+
+.about-text p{
+    text-align: center;
+    color: #BF1F2C;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+#pic1{
+    height: 45%;
+    width: 40%;
+}
+
+#pic2{
+    height: 45%;
+    width: 17%;
+}
+
+#pic3{
+    height: 45%;
+    width: 45%;
+}
+
+.box ul{
+    margin-top: 15rem;
+    text-align: center;
+}
+
+.box ul li{
+    display: inline-block;
+    margin: 2px;
+    bottom: 30vh;
+    border: 50px solid #BF1F2C;
+    background-color: #BF1F2C;
+    border-radius: 15px;
+}
+
+.box ul li p{
+    position: relative;
+    font-size: 150x;
+    font-family: 'Poppins', sans-serif;
+    font-weight:lighter;
+    color:#FFFBFB;
+}
+
+.box .list1 li{
+    width:19rem;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+ 
+
+.Blyant img{
+    transform: rotate(-150deg);
+}

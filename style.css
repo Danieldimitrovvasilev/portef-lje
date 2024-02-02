@@ -1,3 +1,5 @@
+
+/*Kunne bruke bestemt font fra google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /*ingen element skal ikke ha noe padding eller magrin*/
@@ -42,6 +44,7 @@ img{
 }
 
 .container{
+    /*Bruker grid og lager koloner der jeg bestemmer hvor stor plass det skal væer for contetnt*/
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 100px auto auto;
@@ -49,22 +52,26 @@ img{
 }
 
 header{
+    /*Velger hvor header starter og avslutter*/
     grid-column-start: 1;
     grid-column-end: 4;
 }
 
 main{
+    /*velger hvor Main starter og avslutter*/
     grid-column-start: 1;
     grid-column-end: 4;
 }
 
 footer{
+    /*velger hvor footer strater og avslutter*/
     background-color: #171B26;
     grid-column-start: 1;
     grid-column-end: 4;
 }
 
 .logo img{
+    /*Bestemmer størrelse for img og passer på at den ikke leger seg bak bakgrunnen*/
     height: 60px;
     margin-top: 20px;
     margin-left: 2rem;
@@ -79,9 +86,11 @@ footer{
 }
 
 .meny ul{
+    /*bruker flex på listen*/
     display: flex;
 }
 
+/* under legger jeg til mellom rom i listen og hvordan den skal se ut pluss hover effect*/
 .meny ul li{
     margin: 2rem;
     margin-top: 2rem;
@@ -112,6 +121,7 @@ footer{
     width: 100%;
 }
 
+/*under redigerer jeg på tekst 1 og lager en tekst boks med hover effekt*/
 .tekst-1{
     padding: 10rem 0 0 1rem ;
 }
@@ -150,12 +160,16 @@ footer{
 }
 /*Navigasjons meny slutt*/
 
+
+
 #about{
+    /*bestemmer plasseringen til about text*/
     text-align: center;
     padding-top: 2rem;
 }
 
 #about h1{
+    /*redigerer på about text*/
     padding-bottom: 1rem;
     color: #BF1F2C;
     font-size: 30px;
@@ -164,12 +178,14 @@ footer{
 }
 
 .image img{
+    /*bestemmer størrelse og posisjon til bilde av meg*/
     width:70vh;
     display: flex;
     margin-left: 33%;
 }
 
 .about-text p{
+    /*redigerer på paragraph tagen*/
     text-align: center;
     color: #BF1F2C;
     font-size: 20px;
@@ -178,6 +194,7 @@ footer{
     margin: 2rem 0 0 0;
 }
 
+/*under endrer jeg størrelse på bildene*/
 #pic1{
     height: 45%;
     width: 40%;
@@ -193,6 +210,7 @@ footer{
     width: 45%;
 }
 
+/*under redigerer på box klassen og listen som er i den*/
 .box ul{
     margin: 6rem 0 0 0;
     text-align: center;
@@ -222,19 +240,22 @@ footer{
     aspect-ratio: 1/1;
 }
  
-
+/*har rotrerer jeg en av bildene*/
 .Blyant img{
     transform: rotate(-150deg);
 }
 
 /*projects seksjonen*/
 
+
 #projects{
+    /*bestemmer plassering av projects*/
     text-align: center;
     padding-top: 2rem;
 }
 
 #projects h2{
+    /*endrer layout til h2 og bestemmer posisjon*/
     margin: 0 0 2rem 0;
     color: #FFFBFB;
     font-size: 30px;
@@ -242,6 +263,7 @@ footer{
     font-weight: bold;
 }
 
+/*endrer på p element*/
 #projects p{
     padding-top: 3rem;
     color: #FFFBFB;
@@ -251,7 +273,9 @@ footer{
     margin-bottom: 5rem;
 }
 
+
 .Bilde-gallery{
+    /*bruker grid slik at jeg kan plasere hvor bildene skal være*/
     display: grid;
     gap: 15px;
     grid-template-columns: repeat(5,1fr);
@@ -261,6 +285,7 @@ footer{
     margin-right: auto;
 }
 
+/*bestemmer hvor bildene skulle starte og avslutte*/
 .første-element{
     grid-column-start: 1;
     grid-column-end: 4;
@@ -302,6 +327,7 @@ footer{
     padding-left: 5rem;
 }
 
+/*redigerer på h2 på contact*/
 #contact h2{
     color: #BF1F2C;
     padding-top: 5rem;
@@ -311,6 +337,7 @@ footer{
     font-weight: bold;
 }
 
+/*redigere på p på contact*/
 .contact-text p{
     text-align: center;
     margin-top: 2rem;
@@ -321,6 +348,7 @@ footer{
     font-weight: bold;
 }
 
+/*redigerer på bilde med id pic4 og pic5*/
 #pic4{
     height: 45%;
     width: 16%;
@@ -331,6 +359,7 @@ footer{
     width: 9%;
 }
 
+/*redigerer på concat-box liste*/
 .contact-box ul{
     margin: 6rem 0 0 0;
     text-align: center;
@@ -362,25 +391,15 @@ footer{
 
 .github a{
     color:#FFFBFB ;
-    text-decoration: none;
 }
  
-.github a::after{
-    content: "";
-    height: 1px;
-    width:0;
-    background:#FFFBFB;
-    position: absolute;
-    right: -3px;
-    bottom: -3px;
-    transition: 0.8s;
-}
 
-.github a:hover::after{
-    width: 20%;
-}
+/*Under bruker jeg media queries for at det skal tilpasse seg til mobil*/
+@media (max-width:488px) {
 
-@media (max-width: 945px) {
+    .container{
+        overflow-x: hidden;
+    }
     
     .logo img{
         width: 10rem;
@@ -393,8 +412,8 @@ footer{
         padding: 15rem 0 0 1rem ;
     }
     .tekst-1 h1{
-        margin-right: 100px;
-        font-size: 10px;
+        margin-right: 20px;
+        font-size: 1.5rem;
         font-weight: lighter;
         font-family: 'Poppins', sans-serif;
         color: #FFFBFB;
@@ -406,7 +425,7 @@ footer{
     }
     
     .Text-box p{
-        padding-right: 100px;
+        margin-right: 20px;
         font-size: 20px;
         position: relative;
     }
@@ -434,6 +453,7 @@ footer{
     .meny ul li{
         
         position: relative;
+        bottom: 3rem;
         list-style: none;
     }
 
@@ -442,13 +462,13 @@ footer{
     }
 
     .image img{
-        width:30vh;
+        width:40vh;
         display: flex;
-        margin-left: 16%;
+        margin-left: 6%;
     }
 
     .about-text p{
-        padding-right: 50px;
+        padding-left:2px;
         font-size: 16px;
         font-weight: lighter;
         font-family: 'Poppins', sans-serif;
@@ -456,22 +476,14 @@ footer{
         position: relative;
     }
     .box .list1 li{
-        width:15rem;
-        margin-right: 30px;
+        width:10rem;
         height: auto;
         aspect-ratio: 1/1;
     }
 
-    #projects p{
-        padding-right: 45px;
-        font-size: 17px;
-        font-weight: lighter;
-        font-family: 'Poppins', sans-serif;
-        color: #FFFBFB;
-        position: relative;
+    .box ul li p{
+        font-size: 13px;
     }
-    
-
     .Bilde-gallery {
         display: flex;
         flex-direction: column;
@@ -482,6 +494,18 @@ footer{
         width:10rem;
         height: auto;
         aspect-ratio: 1/1;
+    }
+
+    #projects p{
+        font-size: 17px;
+    }
+
+    .skjete-element img{
+        width: 100px
+    }
+
+    .contact-text p{
+        font-size: 17px;
     }
 
 
